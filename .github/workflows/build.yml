@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Derle (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Haskell kurulumu
+        uses: haskell-actions/setup@v2
+        with:
+          ghc-version: '9.10'
+          cabal-version: '3.12'
+
+      - name: Sistem bagimliliklari (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev
+
+      - name: Sistem bagimliliklari (macOS)
+        if: runner.os == 'macOS'
+        run: brew install freeglut
+
+      - name: Bagimliliklari indir
+        run: |
+          cabal update
+          cabal build --only-dependencies
+
+      - name: Derle
+        run: cabal build all

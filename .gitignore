@@ -1,0 +1,32 @@
+# Cabal / GHC derleme çıktıları
+dist-newstyle/
+dist/
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+*.prof
+*.aux
+*.hp
+
+# Derlenmiş çalıştırılabilir dosyalar
+platformer.exe
+platformer
+*.exe
+
+# Yerel kütüphaneler (README'deki kurulum adımlarına bakın)
+freeglut.dll
+*.dll
+
+# Test / hata ayıklama artıkları
+game_pid.txt
+game_err.txt
+*.log
+
+# Editör ve işletim sistemi dosyaları
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
