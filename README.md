@@ -4,6 +4,7 @@
 > Harici bir oyun motoru yok: ne Unity, ne Godot, ne OpenGL sahne grafiği — sadece saf matematik ve `gloss`.
 
 [![Build](https://github.com/HiX5eT/H-Platformer/actions/workflows/build.yml/badge.svg)](https://github.com/HiX5eT/H-Platformer/actions/workflows/build.yml)
+[![İndir](https://img.shields.io/badge/indir-v1.0.0%20(Windows)-2ea44f?logo=windows)](https://github.com/HiX5eT/H-Platformer/releases/latest)
 [![Haskell](https://img.shields.io/badge/Haskell-9.10-5e5086?logo=haskell&logoColor=white)](https://www.haskell.org/)
 [![gloss](https://img.shields.io/badge/grafik-gloss%201.13-2f6f9f)](https://hackage.haskell.org/package/gloss)
 [![Lisans](https://img.shields.io/badge/lisans-BSD--3--Clause-blue)](LICENSE)
@@ -59,6 +60,12 @@ Boşluğa düşmek bir can götürür — toplam **3 canın** var.
 ---
 
 ## Kurulum
+
+### Hızlı başlangıç (Windows, derleme yok)
+
+Hazır derlenmiş sürümü [Releases](https://github.com/HiX5eT/H-Platformer/releases/latest)
+sayfasından indirin, bir klasöre çıkarın ve `oyna.bat` dosyasını çalıştırın.
+`freeglut.dll` paketin içinde gelir.
 
 ### Gereksinimler
 
