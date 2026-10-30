@@ -6,7 +6,7 @@ description:        Gokyuzu Adalari - Haskell ile yazilmis 3B platform oyunu.
 license:            BSD-3-Clause
 license-file:       LICENSE
 author:             HiX5eT
-maintainer:         HiX5eT@users.noreply.github.com
+maintainer:         emreozabay629@gmail.com
 homepage:           https://github.com/HiX5eT/H-Platformer
 bug-reports:        https://github.com/HiX5eT/H-Platformer/issues
 category:           Game
