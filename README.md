@@ -194,7 +194,7 @@ git push origin ozellik/yeni-bolum
 
 ## Lisans
 
-[BSD 3-Clause](LICENSE) © 2026 Eren
+[BSD 3-Clause](LICENSE) © 2026 HiX5eT
 
 ---
 
