@@ -1,0 +1,10 @@
+# Satır sonlarını depoda LF olarak tut, Windows betikleri CRLF kalsın
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+*.png binary
+*.jpg binary
+*.exe binary
+*.dll binary
