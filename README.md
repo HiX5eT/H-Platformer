@@ -96,6 +96,9 @@ cabal build
 cabal run platformer
 ```
 
+> Not: CI derlemesi Windows ve Linux üzerinde çalışır. macOS'ta yerel derleme desteklenir,
+> ancak GHC 9.10 ile yeni macOS SDK arasındaki bilinen bir uyumsuzluk nedeniyle CI matrisinde yer almaz.
+
 ### Elle derleme
 
 ```bash

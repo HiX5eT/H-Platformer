@@ -13,7 +13,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ ubuntu-latest, windows-latest, macos-latest ]
+        # macOS runner'larinda GHC 9.10 + yeni macOS SDK uyumsuzlugu nedeniyle
+        # ("unknown architecture" hatasi) macOS su an matriste degil.
+        # Kod macOS'ta da derlenir; yerel olarak `cabal build` calistirabilirsiniz.
+        os: [ ubuntu-latest, windows-latest ]
 
     steps:
       - uses: actions/checkout@v4
@@ -29,10 +32,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev
-
-      - name: Sistem bagimliliklari (macOS)
-        if: runner.os == 'macOS'
-        run: brew install freeglut
 
       - name: Bagimliliklari indir
         run: |
